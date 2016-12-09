@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
     private List<GameObject> Birds;
     private List<GameObject> Pigs;
 
+	//Conrad Robertson
+	//We will use this to freeze the countdown if win or lose conditions are met
+	public GameObject Timer;
+
+
     // Use this for initialization
     void Start()
     {
@@ -28,12 +33,17 @@ public class GameManager : MonoBehaviour
         //unsubscribe and resubscribe from the event
         //this ensures that we subscribe only once
         slingshot.BirdThrown -= Slingshot_BirdThrown; slingshot.BirdThrown += Slingshot_BirdThrown;
+		
+		//Conrad Robertson
+		//Define our public game object "Timer"
+		Timer = GameObject.Find ("Counter");
     }
 
 
     // Update is called once per frame
     void Update()
     {
+
         switch (CurrentGameState)
         {
             case GameState.Start:
