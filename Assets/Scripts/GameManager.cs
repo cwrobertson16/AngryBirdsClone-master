@@ -46,13 +46,13 @@ public class GameManager : MonoBehaviour
 
         switch (CurrentGameState)
         {
-            case GameState.Start:
+				case GameState.Start:
                 //if player taps, begin animating the bird 
                 //to the slingshot
-                if (Input.GetMouseButtonUp(0))
-                {
-                    AnimateBirdToSlingshot();
-                }
+					if (Input.GetMouseButtonUp (0)) {
+								AnimateBirdToSlingshot ();
+					}
+
                 break;
             case GameState.BirdMovingToSlingshot:
                 //do nothing

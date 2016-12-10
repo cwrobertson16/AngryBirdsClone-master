@@ -1,4 +1,4 @@
-﻿//Team Diamond
+﻿//Team Circle
 //LMSC-281 Fall 2016
 //Final Project (Angry Birds)
 
@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class Countdown : MonoBehaviour {
 
-	public float EasyTimer = 60;  //Amount of time that player has for the "easy" mode
+	public float EasyTimer = 30;  //Amount of time that player has for the "easy" mode
 	public Text timerText;
 
 
